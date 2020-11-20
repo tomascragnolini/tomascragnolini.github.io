@@ -1,0 +1,80 @@
+.news{
+    position: relative;
+    width: 100%;
+    height: 341px;
+    display: block;
+    
+    &::before{
+        width: 100%;
+        position: relative;
+        content: "";
+        display: block;
+        height: 100%;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        transform-origin: top right;
+        clip-path: polygon(0 22%, 100% 0, 100% 100%, 0% 100%);
+
+
+
+    }
+    .latest-news{
+        position: absolute;
+        z-index: 10;
+        width: 288px;
+        height: 126px;
+        font-size: 36px;
+        line-height: 42px;
+        color: #FFFFFF;
+        font-family: 'IBM Plex Sans', sans-serif;
+        text-align: center;
+        top: 64px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+    }
+
+    .listen{
+        position: absolute;
+        width: 288px;
+        height: 48px;
+        top: 226px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 500;
+        background-color: #00F3BB;
+        border: none;
+        color: #060A24;
+        
+        
+    }
+}
+
+
+@media screen and (min-width:1440px){
+    .news{
+       height: 518px;
+        &::before{
+            height: 100%;
+        }
+      
+        .latest-news{
+            width: 692px;
+            height: 62px;
+            font-size: 48px;
+            line-height: 62px;
+            top: 213px;
+           
+        }
+        .listen{
+            width: 345px;
+            height: 56px;
+            top: 311px;
+            font-size: 18px;
+            line-height: 24px;
+            
+        }
+    }
+}

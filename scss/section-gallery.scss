@@ -1,0 +1,53 @@
+
+
+.gallery-title{
+    width: 288px;
+    height: 84px;
+    margin: 0px 16px 14px 16px;
+
+    h2{  color: #060A24 ;
+        font-size: 36px;
+        line-height: 42px;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 243px;
+    grid-gap:0px;
+
+    
+    img{
+       width: 100%;
+       max-width: 480px;
+       max-height: 364px;
+       
+    }
+}
+
+@media screen and (min-width:1440px){
+    .gallery-title{
+        width: 481px;
+        height: 62px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-left: 200px;
+        margin-bottom: 36px;
+
+        h2{
+            margin-right: 10px;
+            font-size: 48px;
+            line-height: 62px;
+        }
+    }
+    .gallery{
+        width: 100%;
+        grid-template-columns: 480px 480px 480px;
+        grid-template-rows: 364px 364px ;
+       
+    }
+}

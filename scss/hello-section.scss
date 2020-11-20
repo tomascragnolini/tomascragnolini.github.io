@@ -1,0 +1,156 @@
+.title-intro{
+    
+    width: 212px;
+    height: 84px;
+    margin-left: 16px;
+    margin-top: 24px;
+    color: #060A24 ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+  
+    .hello::first-letter{
+        text-transform: uppercase;
+    }
+
+    .world{
+        text-decoration: line-through; 
+        padding-left: 10px;
+        margin-right: 12px;
+    }
+    
+    h2{
+        font-size: 36px;
+        font-weight: normal;
+    }
+
+    .dot{
+        display: inline-block;
+        width: 10px;
+        height: 42px;
+        
+    }
+   
+
+   
+}
+
+.intro{
+   
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+   width: 288px;
+   height: 66px;
+   margin: 16px 16px 36px 16px;
+    
+    p{
+
+    line-height: 22px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    
+
+    }
+
+     p::first-letter{
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+.know-more{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 288px;
+    height: 48px;
+    margin: 0px 16px 16px 16px;
+    background-color: #00F3BB ;
+   
+    
+
+    a{  display: block;
+        width: 100%;
+        height: 22px;
+        color: #060A24;
+        font-family:'IBM Plex Mono', monospace;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        
+        
+    }
+
+}
+
+
+
+
+    
+
+@media screen and (min-width:1440px){
+      
+    .title-intro{
+        width: 740px;
+        height: 84px;
+        display: flex;
+        flex-direction: row;
+        margin: 120px 500px 0px 200px;
+        justify-content: start;
+        align-items: center;
+        font-size: 64px;
+        
+
+        h2{
+            font-size: 64px;
+            line-height: 84px;
+        }
+
+        .dot{
+            width: 18px;
+            height: 84px;
+            color: #0000EC;
+        }
+
+        
+        
+    }
+
+    .intro{
+        width: 628px;
+        height: 48px;
+        margin: 0px 612px 56px 200px;
+        p{
+
+            font-size: 16px;
+            line-height: 24px;
+
+        }
+    }
+
+   .know-more{
+       width: 226px;
+       height: 56px;
+       margin: 0px 1014px 5px 200px;
+       &:hover{
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        transition: 1s;
+       }
+
+       a{  display: block;
+           font-family: 'IBM Plex Mono', monospace;
+           font-weight: 500;
+           width: 108px;
+           height: 24px;
+           margin: 59px 16px 59px 16px;
+       }
+   }
+
+}
+
+
