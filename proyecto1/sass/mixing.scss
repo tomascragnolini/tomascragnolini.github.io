@@ -1,0 +1,55 @@
+@import "variables";
+
+@mixin flex-column($justify-content){
+    flex-direction:column ;
+    justify-content: $justify-content;
+
+}
+@mixin paragraph {
+    font-family:$plex-mono ;
+    color: $darkblue;
+    font-size: 1.4rem;
+    weight: 400px;
+    line-height:  2.2rem;
+    letter-spacing: 0rem;
+}
+
+@mixin titles {
+ font-family: $plex-sans;
+ color: $darkblue;
+ font-size: 3.6rem;
+ letter-spacing: 0;
+ line-height: 4.2rem;
+}
+//buttons
+@mixin button{
+    width: 28.8rem;
+    height: 4.8rem;
+    color: $darkblue;
+    background-color:$light-green;
+    font-family: $plex-mono;
+    text-transform: uppercase;
+    font-weight:500;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+@mixin desktop {
+    
+    @media screen and(min-width: 1300px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width:768px){
+        @content
+    }
+}
+
+@mixin grid($column, $gap) {
+    display: grid;
+    grid-template-columns: repeat($column, 1fr);
+    gap: $gap;
+    
+}
